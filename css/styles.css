@@ -568,8 +568,9 @@ footer {
   height: 50px;
 }
 
-footer h6 {
+footer p {
   padding: 5px;
+  font-size: 10px;
 }
 
 footer a {
