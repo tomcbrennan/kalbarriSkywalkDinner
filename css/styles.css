@@ -10,6 +10,7 @@ html.is-active {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  color: #f8f8f8;
 }
 
 body {
@@ -190,7 +191,7 @@ section {
 }
 
 .home .home-title img {
-  width: 50px;
+  width: 85px;
 }
 
 .home .home-title h1 {
@@ -341,8 +342,8 @@ section {
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .collage-row .image1-container {
@@ -391,6 +392,32 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
+}
+
+.collage-row .image7-container {
+  background: url(../media/skywalk-dinner7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .collage-row .image7-container {
+    display: none;
+  }
+}
+
+.collage-row .image8-container {
+  background: url(../media/skywalk-dinner8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .collage-row .image8-container {
+    display: none;
+  }
 }
 
 .book-packages-sections {
@@ -525,6 +552,30 @@ section {
   font-size: 1.5em;
 }
 
+.book-section .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-section .contact-content .book-buttons, .book-section .contact-content .slider-container {
+  width: 100%;
+}
+
+.book-section .contact-content .book-buttons {
+  border-right: 1px solid #f8f8f8;
+}
+
+.book-section .contact-content .slider-container .reviews-slider {
+  padding: 50px;
+}
+
 .book-section .contact-container {
   text-align: center;
   display: -webkit-box;
@@ -543,63 +594,6 @@ section {
 
 .book-section .contact-container i {
   margin-right: 15px;
-}
-
-.reviews-container {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  text-align: justify;
-  color: #f8f8f8;
-  height: 100%;
-}
-
-.reviews-container > * {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 100%;
-}
-
-.reviews-container > * + * {
-  margin-left: 30px;
-}
-
-.reviews-container .review {
-  background: #f8f8f8;
-  border-top: 1px solid #f8f8f8;
-  height: 500px;
-  padding: 30px;
-  margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  color: #3b8ec1;
-  width: 100%;
-}
-
-.reviews-container .review p {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 footer {
@@ -711,39 +705,24 @@ footer img {
 }
 
 @media only screen and (max-width: 1024px) {
-  body {
-    font-size: 0.8em;
-  }
   .home {
     background-position: center left;
   }
-  .packages {
+  .contact-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
-  .packages .packages-heading {
-    width: 100%;
-    height: 20vh;
-    font-size: 5em;
+  .book-section {
+    padding-bottom: 0;
   }
-  .packages .package-type {
-    width: 90%;
-    margin: 20px;
-    padding: 20px;
+  .book-section .contact-content .book-buttons {
+    border-right: 0px;
   }
-  .packages .package-type a {
-    margin-top: 20px;
-  }
-  .packages .package-type .coach-package-details, .packages .package-type .drive-package-details {
-    height: 200px;
-  }
-  .reviews-container .review {
-    height: 500px;
+  .slider-container .reviews-slider {
+    border-top: 1px solid #f8f8f8;
+    padding: 25px !important;
   }
 }
 
@@ -754,34 +733,6 @@ footer img {
   .event-content {
     margin: 0;
     font-size: 1.2em;
-  }
-  .packages .package-type .coach-package-details {
-    padding: 0;
-    padding-bottom: 20px;
-  }
-  .packages .package-type .drive-package-details {
-    padding: 0;
-    padding-bottom: 20px;
-  }
-  .book-details {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .reviews-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .reviews-container .review {
-    width: 100%;
   }
 }
 

@@ -7,6 +7,7 @@
     <title>Kalbarri Skywalk Dinner</title>
     <link rel="shortcut icon" href="/media/best4tourismEvents.png"/>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -82,6 +83,8 @@
         <div class="image4-container" data-aos="fade-in"></div>
         <div class="image5-container" data-aos="fade-in"></div>
         <div class="image6-container" data-aos="fade-in"></div>
+        <div class="image7-container" data-aos="fade-in"></div>
+        <div class="image8-container" data-aos="fade-in"></div>
       </div>
 
 
@@ -111,16 +114,49 @@
         <section class="book-section" id="book-section">
           <h2 class='title-has-lines'>BOOK NOW</h2>
           <h3>Join us for an unforgettable weekend! <br> Please contact us by selecting an option below for more information.</h3>
-            <a class="contact-container call-container" href="tel:92037555"  data-aos="fade-in" data-aos-duration="1000">
-              <i class="fas fa-phone-square-alt fa-2x"></i>
-              <h3>08 9203 7555</h3>
-            </a>
-            <a class="contact-container email-container" href="mailto:hillarys@best4travel.com.au"  data-aos="fade-in" data-aos-duration="1000">
-              <i class="fas fa-envelope-square fa-2x"></i>
-              <h3>hillarys@best4travel.com.au</h3>
-            </a>
+          <div class="contact-content">
+
+            <div class="book-buttons">
+
+              <a class="contact-container call-container" href="tel:92037555">
+                <i class="fas fa-phone-square-alt fa-2x"></i>
+                <h3>08 9203 7555</h3>
+              </a>
+              <a class="contact-container email-container" href="mailto:hillarys@best4travel.com.au">
+                <i class="fas fa-envelope-square fa-2x"></i>
+                <h3>hillarys@best4travel.com.au</h3>
+              </a>
+
+            </div>
+
+            <div class="slider-container">
+
+              <div class="reviews-slider">
+                <p class="slide">My husband and I thoroughly enjoyed Best 4 Travel's Inaugural 3
+                  night Kalbarri Skywalk Dinner tour. We could not fault anything at
+                  all. Scott and his wonderful team stopped at nothing to make sure
+                  that this event would be something that will remain a highlight
+                  for us for ever. <br>- Marie</p>
+
+                <p class="slide">To all who organised the 3 night Kalbarri Skywalk Dinner Package:
+                  Thank you for everything! Your organisation was amazing in every
+                  way. Nothing was too much trouble and the staff were so friendly
+                  and helpful. From the comfortable bus trip there until we arrived
+                  home it was most enjoyable.<br>- Mark</p>
+
+                <p class="slide">Awesome event. The whole weekend was fabulous great staff great organisation. 
+                  The evening in the skywalk is a memory that will stay with me forever. Everyone should go if 
+                  the opportunity arises. An experience not to be missed. Thanks everyone for organising a great 
+                  weekend away.<br>- Elaine</p>
+                
+                <p class="slide">Last night far exceeded our expectations, what a fabulous night. Thank you for 
+                  all your hard work in organising such an amazing weekend. Can’t wait to join you again next year.
+                  <br>- Jennifer</p>
+              </div>
+            </div>
+          </div>
         </section>
-      </div>
+
 
 <!-- 
         <div class="reviews-container">
@@ -169,7 +205,6 @@
     </footer>
     <!--------------------------- SCRIPTS -------------------------------->
 
-    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/0e24537e5f.js"
       crossorigin="anonymous"
@@ -180,6 +215,28 @@
     <script>
       AOS.init({
         once: true
+      });
+    </script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.reviews-slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          infinite: true,
+          arrows: false,
+          fade: true,
+          pauseOnHover: true,
+          speed: 2000
+        });
       });
     </script>
   </body>
