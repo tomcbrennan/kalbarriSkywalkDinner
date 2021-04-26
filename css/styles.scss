@@ -26,6 +26,10 @@ h2 {
   position: relative;
 }
 
+h1, h2, h3, h4 {
+  text-shadow: black 1px 1px 0px;
+}
+
 .title-has-lines {
   &:before, &:after {
     content: '';
