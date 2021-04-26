@@ -197,6 +197,7 @@ section {
 .home .home-title h1 {
   font-size: 4em;
   text-align: center;
+  padding: 0 25px;
 }
 
 .home .home-title h1:after {
@@ -722,7 +723,7 @@ footer img {
   }
   .slider-container .reviews-slider {
     border-top: 1px solid #f8f8f8;
-    padding: 25px !important;
+    padding: 15px !important;
   }
 }
 
@@ -730,12 +731,14 @@ footer img {
   body {
     font-size: 0.9em;
   }
-  .events > * + * {
-    margin-left: 0;
+}
+
+@media only screen and (max-width: 475px) {
+  .home .home-title h1 {
+    font-size: 3em;
   }
-  .event-content {
-    margin: 0;
-    font-size: 1.2em;
+  a.contact-container {
+    font-size: 0.9em;
   }
 }
 

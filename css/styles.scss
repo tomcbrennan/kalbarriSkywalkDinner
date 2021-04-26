@@ -163,6 +163,7 @@ section {
     justify-content: center;
     overflow: hidden;
 
+
     @media screen and (max-width: 768px){
       margin-bottom: 150px;
     }
@@ -175,6 +176,7 @@ section {
     h1 {
       font-size: 4em;
       text-align: center;
+      padding: 0 25px;
 
       &:after {
         content: '';
@@ -603,7 +605,7 @@ footer {
   .slider-container {
     .reviews-slider {
       border-top: 1px solid $white;
-      padding: 25px !important;
+      padding: 15px !important;
     }
   }
 }
@@ -613,17 +615,24 @@ footer {
   body {
     font-size: 0.9em;
   }
+}
 
+@media only screen and (max-width: 475px) {
 
-  .events > * + * {
-    margin-left: 0;
+  .home {
+    .home-title {
+      h1 {
+        font-size: 3em;
+      }
+    }
   }
-  
-  .event-content {
-    margin: 0;
-    font-size: 1.2em;
+
+  a.contact-container {
+    font-size: 0.9em;
   }
 }
+
+
 
 
 
