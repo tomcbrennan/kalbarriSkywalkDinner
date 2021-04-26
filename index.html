@@ -3,107 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Join us for an unforgettable night under the stars at the Kalbarri Skywalk Dinner. Presented by Best4Travel Hillarys."
-    />
+    <meta name="description" content="Join us for an unforgettable night under the stars at the Kalbarri Skywalk Dinner. Presented by Best4Travel Hillarys."/>
     <title>Kalbarri Skywalk Dinner</title>
-    <link
-      rel="shortcut icon"
-      href="/media/best4tourismEvents.png"
-    />
+    <link rel="shortcut icon" href="/media/best4tourismEvents.png"/>
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
-    <!--------------------------- MENU --------------------------->
-    <nav class="nav">
-      <div class="nav-title">
-        <a href="http://best4travel.com.au/" class = 'b4t-link' target="_blank"
-          ><img src="/media/best4travelLogo.png" alt="logo"
-        /></a>
-      </div>
-      <div class="nav-links">
-        <a class="nav-link" href="#home">Home</a>
-        <a class="nav-link" href="#events">Events</a>
-        <a class="nav-link" href="#packages">Packages</a>
-        <a class="nav-link" href="#book">Book</a>
-      </div>
-    </nav>
-
-    <!--------------------------- HOME SECTION --------------------------->
     <main>
+      <!-- <div class="hamburger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <a class="mobile-link1" href="#home">Home</a>
+          <a class="mobile-link2" href="#events">Upcoming</a>
+          <a class="mobile-link3" href="#packages">Packages</a>
+          <a class="mobile-link4" href="#book">Book Now</a>
+        </nav>
+      </div> -->
+
+      <!--------------------------- HOME SECTION --------------------------->
+
+
       <section class="home" id="home">
         <div class="home-title">
-          <h4>Best4Travel presents:</h4>
+          <a href="http://best4travel.com.au/" class = 'b4t-link' rel="noopener" target="_blank">
+            <img src="/media/best4travelLogo.png" alt="logo"/>
+          </a>
+          Best4Travel presents:
           <h1>The Kalbarri Skywalk Dinner</h1>
+
+          <nav class="nav">
+            <a class="nav-link" href="#events-section">Upcoming</a>
+            <a class="nav-link" href="#packages-section">Packages</a>
+            <a class="nav-link" href="#book-section">Book Now</a>
+          </nav>
         </div>
+
+        <a class="scroll-down" href="#events-section">
+          <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg>
+        </a>
       </section>
 
-      <!--------------------------- INTRODUCTION SECTION ----------------------->
 
-      <section class="events" id="events">
-        <div class="event">
-          <div class="event-content">
-            <h1>Next Event:</h1>
-            <h1>Fri 26 Mar - Mon 29 Mar 2021</h1>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-content">
-            <h1>Future Events:</h1>
-            <h2>Fri 5 Nov - Mon 8 Nov 2021</h2>
-            <h2>Fri 3 Dec - Mon 6 Dec 2021</h2>
-            <h2>Fri 14 Jan - Mon 17 Jan 2022</h2>
-            <h2>Fri 11 Feb - Mon 14 Feb 2022</h2>
-            <h2>Fri 18 Mar - Mon 21 Mar 2022</h2>
-          </div>
-        </div>
-      </section>
-
-      <!--------------------------- VIDEO SECTION ----------------------->
+      <!--------------------------- EVENTS SECTION ----------------------->
 
       
-      <section class = 'vimeo'>
-        <iframe src="https://player.vimeo.com/video/485801986" title = 'kalbarri-skywalk-video' width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <section class = 'events-section' id = 'events-section'>
+        <div class="events" id="events">
+          <div class="upcoming-container" data-aos="fade-up" data-aos-duration="1000">
+            <h2>UPCOMING EVENT</h2>
+            <div class="upcoming-dates">
+              <h3>Fri 19 Nov 2021 – Mon 22 Nov 2021</h3>
+            </div>
+          </div>
+          <div class="future-container" data-aos="fade-up" data-aos-duration="1000">
+            <h2>FUTURE EVENTS</h2>
+            <div class="future-dates">
+              <h3>Fri 3 Dec 2021 - Mon 6 Dec 2021</h3>
+              <h3>Fri 18 Mar 2022 - Mon 21 Mar 2022</h3>
+            </div>
+          </div>
+        </div>
+        <iframe src="https://player.vimeo.com/video/485801986" title = 'kalbarri-skywalk-video' width="100%" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
       </section>
 
+      <div class="collage-row">
+        <div class="image1-container" data-aos="fade-in"></div>
+        <div class="image2-container" data-aos="fade-in"></div>
+        <div class="image3-container" data-aos="fade-in"></div>
+        <div class="image4-container" data-aos="fade-in"></div>
+        <div class="image5-container" data-aos="fade-in"></div>
+        <div class="image6-container" data-aos="fade-in"></div>
+      </div>
 
 
-      <!--------------------------- PACKAGES SECTION ----------------------->
+      
 
-      <section class="packages" id="packages">
-        <div class="packages-heading">
-          <h1>PACKAGES</h1>
-        </div>
-        <div class="package-type" id="coach-package">
-          <div class="coach-package-details">
-            <h2>Coach Package</h2>
-            <h1>$1399pp*</h1>
+      <div class="book-packages-sections">
+
+        <!--------------------------- PACKAGES SECTION ----------------------->
+        <section class="packages-section" id="packages-section">
+          <h2 class="title-has-lines">PACKAGES</h2>
+          <div class="packages-container">
+            <div class="package" data-aos="fade-up" data-aos-duration="1500">
+              <h3>Coach Package</h3>
+              <p>$1399pp*</p>
+              <a href="/media/skywalk-march-poster.pdf" download class="more-info">More information</a>
+            </div>
+            <div class="package" data-aos="fade-up" data-aos-duration="1500">
+              <h3>Self-drive Package</h3>
+              <p>$1299pp*</p>
+              <a href="" download class="more-info">More information</a>
+            </div>
           </div>
-          <a href="/media/skywalk-march-poster.pdf" download>
-            <h2>More information</h2>
-          </a>
-        </div>
+        </section>
 
-        <div class="package-type" id="drive-package">
-          <div class="drive-package-details">
-            <h2>Self-drive Package</h2>
-            <h1>$1299pp*</h1>
-          </div>
-          <a href="" download>
-            <h2>More information</h2>
-          </a>
-        </div>
-      </section>
+         <!--------------------------- BOOK SECTION ----------------------->
 
-      <!--------------------------- BOOK SECTION ----------------------->
+        <section class="book-section" id="book-section">
+          <h2 class='title-has-lines'>BOOK NOW</h2>
+          <h3>Join us for an unforgettable weekend! <br> Please contact us by selecting an option below for more information.</h3>
+            <a class="contact-container call-container" href="tel:92037555">
+              <i class="fas fa-phone-square-alt fa-2x"></i>
+              <h3>08 9203 7555</h3>
+            </a>
+            <a class="contact-container email-container" href="mailto:hillarys@best4travel.com.au">
+              <i class="fas fa-envelope-square fa-2x"></i>
+              <h3>hillarys@best4travel.com.au</h3>
+            </a>
+        </section>
+      </div>
+    
 
-      <section class="book" id="book">
+      <!-- <section class="book" id="book">
         <div class="book-details">
           <h1>Contact us to book now!</h1>
           <div class="contact-options">
@@ -118,6 +138,7 @@
           </div>
           
         </div>
+
         <div class="reviews-container">
           <div class="review">
             <i class="fas fa-smile-beam fa-3x"></i>
@@ -153,7 +174,7 @@
             <h3>Marilyn Dixon</h3>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!--------------------------- FOOTER --------------------------------->
@@ -170,5 +191,16 @@
       src="https://kit.fontawesome.com/0e24537e5f.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
   </body>
+
+  
 </html>
+
