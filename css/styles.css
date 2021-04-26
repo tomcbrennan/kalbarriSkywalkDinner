@@ -611,6 +611,7 @@ footer {
   background: #3b8ec1;
   padding: 25px;
   height: 50px;
+  overflow: hidden;
 }
 
 footer p {
