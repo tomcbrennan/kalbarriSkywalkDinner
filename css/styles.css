@@ -179,6 +179,12 @@ section {
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .home .home-title {
+    margin-bottom: 150px;
+  }
+}
+
 .home .home-title img {
   width: 50px;
 }
@@ -229,7 +235,7 @@ section {
 
 .home .scroll-down {
   position: absolute;
-  bottom: 50px;
+  bottom: 150px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
