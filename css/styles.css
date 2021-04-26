@@ -727,6 +727,9 @@ footer img {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+  }
   .events > * + * {
     margin-left: 0;
   }
