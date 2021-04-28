@@ -676,6 +676,12 @@ section {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .reviews-container .review {
+    margin: 0;
+  }
+}
+
 .reviews-container .review:first-child {
   background: #f8f8f8;
 }
