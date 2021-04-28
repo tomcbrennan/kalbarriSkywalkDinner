@@ -3,15 +3,6 @@
 
 // // const nav = document.querySelector('.nav');
 
-// // window.onscroll = function() {
-// //   var currentScrollPos = window.pageYOffset;
-// //   if (currentScrollPos > 0) {
-// //     nav.style.opacity="0"
-// //   } else {
-// //     nav.style.opacity="1";
-// //   }
-// // };
-
 
 
 // const hamburger = document.querySelector('.hamburger');
@@ -43,3 +34,28 @@
 //   mobileMenu.classList.toggle('is-active');
 //   hamburger.classList.toggle('is-active');
 // })
+
+
+
+
+// REVIEWS TOGGLE
+
+const html = document.querySelector('.html');
+const reviews = document.querySelector('.reviews-container');
+const reviewsBtn = document.querySelector('.reviews-btn');
+
+
+reviewsBtn.addEventListener('click', () => {
+    reviews.classList.toggle('is-active');
+    html.classList.toggle('disable');
+});
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (currentScrollPos > 50) {
+        reviewsBtn.classList.add('is-active');
+    } else {
+        reviewsBtn.classList.remove('is-active');
+    }
+};
+

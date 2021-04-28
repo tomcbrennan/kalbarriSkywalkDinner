@@ -1,4 +1,4 @@
-html.is-active {
+.html.disable {
   overflow-y: hidden;
 }
 
@@ -569,10 +569,6 @@ section {
   width: 100%;
 }
 
-.book-section .contact-content .book-buttons {
-  border-right: 1px solid #f8f8f8;
-}
-
 .book-section .contact-content .slider-container .reviews-slider {
   padding: 50px;
 }
@@ -597,6 +593,107 @@ section {
   margin-right: 15px;
 }
 
+.reviews-btn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 100px);
+          transform: translate(-50%, 100px);
+  padding: 10px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  z-index: 10000;
+  width: 100vw;
+}
+
+.reviews-btn.is-active {
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
+.reviews-btn > * {
+  color: black;
+  text-align: center;
+}
+
+.reviews-btn i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.reviews-container {
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  place-items: center;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100vw;
+  z-index: 100;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.7);
+  overflow-y: scroll;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.reviews-container.is-active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.reviews-container h2 {
+  text-align: center;
+}
+
+.reviews-container .review {
+  width: 350px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 10px;
+  min-height: 375px;
+  position: relative;
+}
+
+.reviews-container .review:first-child {
+  background: #f8f8f8;
+}
+
+.reviews-container .review:first-child > h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: black;
+  text-shadow: none;
+}
+
+.reviews-container .review p {
+  margin-bottom: 15px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,6 +709,7 @@ footer {
   padding: 25px;
   height: 50px;
   overflow: hidden;
+  margin-bottom: 45px;
 }
 
 footer p {
@@ -718,9 +816,6 @@ footer img {
   }
   .book-section {
     padding-bottom: 0;
-  }
-  .book-section .contact-content .book-buttons {
-    border-right: 0px;
   }
   .slider-container .reviews-slider {
     border-top: 1px solid #f8f8f8;
