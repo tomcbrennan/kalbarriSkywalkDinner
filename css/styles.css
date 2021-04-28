@@ -657,6 +657,12 @@ section {
   height: 100%;
 }
 
+@media screen and (max-width: 475px) {
+  .reviews-container {
+    padding: 0;
+  }
+}
+
 .reviews-container.is-active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -674,12 +680,6 @@ section {
   margin: 10px;
   min-height: 375px;
   position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  .reviews-container .review {
-    margin: 0;
-  }
 }
 
 .reviews-container .review:first-child {

@@ -556,6 +556,10 @@ section {
   min-height: 100vh;
   height: 100%;
 
+  @media screen and (max-width: 475px){
+    padding: 0;
+  }
+
   &.is-active {
     transform: translateY(0);
     opacity: 1;
@@ -572,10 +576,6 @@ section {
     margin: 10px;
     min-height: 375px;
     position: relative;
-
-    @media screen and (max-width:768px){
-      margin: 0;
-    }
 
     &:first-child {
       background: $white;
